@@ -36,6 +36,10 @@ class MainApplication : Application() {
         } else {
             sendServiceRecreated()
         }
+
+        Global.launch {
+            Shortcuts.install(applicationContext)
+        }
     }
 
     private fun extractGeoFiles() {
